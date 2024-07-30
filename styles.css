@@ -175,7 +175,9 @@ h2 {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
     border-radius: 15px;
-    margin: 40px 150px 150px 150px !important;
+    width: 76.5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .timetable h2 {
@@ -241,4 +243,98 @@ h2 {
 }
 .copy-right p {
     margin-top: 2%;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 767.98px) {
+    .hero-header h1 {
+        font-size: 2rem;
+    }
+
+    .hero-header p {
+        font-size: 1.2rem;
+    }
+
+    .gallery-head p {
+        width: 90%;
+    }
+
+    .gallery-item {
+        margin-bottom: 1rem;
+    }
+
+    .card-deck {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    /* Fix for overlapping issue */
+    .timetable, .membership {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .membership {
+        margin-bottom: 20px;
+    }
+
+    .timetable {
+        margin-top: 20px;
+    }
+
+    .timetable-item {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .card-deck {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Additional media query for small screens */
+@media (max-width: 576px) {
+    .card-deck {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .timetable, .membership {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .timetable-item {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .membership {
+        margin-bottom: 20px;
+    }
 }
